@@ -29,7 +29,7 @@
 <template>Landlords are required to provide a 60-day advance notice to a resident if the landlord elects to terminate a tenancy. If the tenant has resided in the unit less than 1 year, the landlord is only required to give a 30-day notice. (Civil Code Section 1946.1)</template>
 </category>
 
-<category><pattern>WHAT * ELLIS ACT ^</pattern>
+<category><pattern>WHAT * ELLIS ACT *</pattern>
 <template>A California State law that allow for a landlord to evict residential tenants in order to "go out of the rental business". There are specific stipulations to how a landlord can invoke this act for the purpose of eviction.</template>
 </category>
 
