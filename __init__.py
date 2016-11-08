@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, make_response
+from collections import deque
 app = Flask(__name__)
 app.secret_key = 'super_secret_key'
 
 from pb_py import main as pbApi
 host = 'aiaas.pandorabots.com'
 from secret import app_id, user_key, botname
-conversation = []
+conversation = deque()
 error = ''
 
 @app.route('/', methods=['GET', 'POST'])
@@ -20,7 +21,7 @@ def showMain():
 		if question and not question.isspace():
 			response = pbApi.talk(user_key, app_id, host, botname, question)
 			answer = response['response'].replace('\n', '<br />')
-			conversation.append((question, answer))
+			conversation.appendleft((question, answer))
 		else:
 			error = 'Please enter a question'
 		return redirect('/')
@@ -29,7 +30,7 @@ def showMain():
 def clearHistory():
 	'''Clears the chat history'''
 	global conversation
-	conversation = []
+	conversation.clear()
 	return redirect('/')
 
 if __name__ == '__main__':
