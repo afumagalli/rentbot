@@ -50,7 +50,6 @@ Under the Federal Fair Credit Reporting Act a landlord has to tell you if the re
 The landlord must give you advance notice before coming into your apartment for other reasons, like making repairs or showing the unit to a potential tenant. Some states have laws that regulate these entries and set forth rules on how much advance notice the landlord must give, and whether the landlord must tell you what time he or she will enter and why.</template>
 </category>
 
-
 <category><pattern>HOW * Landlord REMOVE TENANT ^</pattern>
 <template>Wonderboy</template>
 </category>

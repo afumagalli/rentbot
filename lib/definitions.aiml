@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>XDEFINE RAHUL</pattern>
+        <template>Rahul is a stoned mofo.</template>
+    </category>
+
+    <category>
+        <pattern>XDEFINE ^ ELLIS ACT</pattern>
+        <template>The Ellis Act is a California State law that allow for a landlord to evict residential tenants in order to "go out of the rental business". There are specific stipulations to how a landlord can invoke this act for the purpose of eviction.</template>
+    </category>
+
+    <category>
+        <pattern>XDEFINE ^ SERVICE ANIMAL</pattern>
+        <template>A service animal is a dog that has been trained to assist a person with a disability.</template>
+    </category>
+
+    <category>
+        <pattern>XDEFINE ^ SERVICE ANIMALS</pattern>
+        <template>A service animal is a dog that has been trained to assist a person with a disability.</template>
+    </category>
+
+    <category>
+        <pattern>XDEFINE *</pattern>
+        <template>I don't know what that is.</template>
+    </category>
+</aiml>
